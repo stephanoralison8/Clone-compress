@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+resultats/*.bzc
+resultats/*.lzc
+resultats/*.7zc
+resultats/_7z/

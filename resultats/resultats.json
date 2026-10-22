@@ -1,0 +1,58 @@
+[
+  {
+    "fichier": "audio.wav",
+    "type": "audio",
+    "taille": 264644,
+    "bzip2_clone": 237596,
+    "lzma_clone": 245576,
+    "7z_clone": 245697,
+    "bzip2_ref": 220664,
+    "lzma_ref": 240304,
+    "duree_bzip2": 0.7491192817687988,
+    "duree_lzma": 0.9420630931854248,
+    "duree_7z": 0.951202392578125,
+    "aller_retour_ok": true
+  },
+  {
+    "fichier": "image.bmp",
+    "type": "image",
+    "taille": 230454,
+    "bzip2_clone": 161513,
+    "lzma_clone": 103851,
+    "7z_clone": 103973,
+    "bzip2_ref": 154549,
+    "lzma_ref": 56504,
+    "duree_bzip2": 0.6795246601104736,
+    "duree_lzma": 0.520392894744873,
+    "duree_7z": 0.5216972827911377,
+    "aller_retour_ok": true
+  },
+  {
+    "fichier": "texte.txt",
+    "type": "texte",
+    "taille": 310768,
+    "bzip2_clone": 50838,
+    "lzma_clone": 71545,
+    "7z_clone": 73848,
+    "bzip2_ref": 43284,
+    "lzma_ref": 58392,
+    "duree_bzip2": 0.9145746231079102,
+    "duree_lzma": 0.4576399326324463,
+    "duree_7z": 0.42801332473754883,
+    "aller_retour_ok": true
+  },
+  {
+    "fichier": "video.y4m",
+    "type": "vidéo",
+    "taille": 576163,
+    "bzip2_clone": 4641,
+    "lzma_clone": 4898,
+    "7z_clone": 5105,
+    "bzip2_ref": 3505,
+    "lzma_ref": 2228,
+    "duree_bzip2": 0.8977112770080566,
+    "duree_lzma": 0.2670326232910156,
+    "duree_7z": 0.2710392475128174,
+    "aller_retour_ok": true
+  }
+]
