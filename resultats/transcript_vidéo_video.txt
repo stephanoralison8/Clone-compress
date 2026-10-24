@@ -1,21 +1,21 @@
-$ python clonecompress.py bzip2 -k -f -v -n 3 -o resultats/video.y4m.bzc echantillons/video.y4m
-echantillons/video.y4m -> resultats/video.y4m.bzc : 562.66 Ko -> 4.53 Ko (0.81 % de l'original, gain 99.19 %) en 0.87 s
-$ python clonecompress.py lzma -k -f -v -n 6 -o resultats/video.y4m.lzc echantillons/video.y4m
-echantillons/video.y4m -> resultats/video.y4m.lzc : 562.66 Ko -> 4.78 Ko (0.85 % de l'original, gain 99.15 %) en 0.24 s
-$ python clonecompress.py 7z a resultats/video.y4m.7zc echantillons/video.y4m -n 5
-Archive resultats/video.y4m.7zc créée : 1 fichier(s), 562.66 Ko -> 4.99 Ko (0.89 % de l'original)
-Durée : 0.25 s
-$ python clonecompress.py 7z l resultats/video.y4m.7zc
+$ python clonecompress.py bzip2 -k -f -v -n 3 -o resultats\video.y4m.bzc echantillons\video.y4m
+echantillons\video.y4m -> resultats\video.y4m.bzc : 562.66 Ko -> 4.53 Ko (0.81 % de l'original, gain 99.19 %) en 5.27 s
+$ python clonecompress.py lzma -k -f -v -n 6 -o resultats\video.y4m.lzc echantillons\video.y4m
+echantillons\video.y4m -> resultats\video.y4m.lzc : 562.66 Ko -> 4.78 Ko (0.85 % de l'original, gain 99.15 %) en 2.78 s
+$ python clonecompress.py 7z a resultats\video.y4m.7zc echantillons\video.y4m -n 5
+Archive resultats\video.y4m.7zc créée : 1 fichier(s), 562.66 Ko -> 4.99 Ko (0.89 % de l'original)
+Durée : 1.59 s
+$ python clonecompress.py 7z l resultats\video.y4m.7zc
 Date                    Taille     CRC32  Nom
 ------------------------------------------------------------
-2026-10-20 04:38        576163  dbeddbbb  video.y4m
+2026-10-22 22:29        576163  dbeddbbb  video.y4m
 ------------------------------------------------------------
                         576163  1 entrée(s)
-$ python clonecompress.py bzip2 -d -k -f -v -o resultats/_bz.out resultats/video.y4m.bzc
-resultats/video.y4m.bzc -> resultats/_bz.out : 4.53 Ko -> 562.66 Ko en 0.10 s
-$ python clonecompress.py lzma -d -k -f -v -o resultats/_lz.out resultats/video.y4m.lzc
-resultats/video.y4m.lzc -> resultats/_lz.out : 4.78 Ko -> 562.66 Ko en 0.02 s
-$ python clonecompress.py 7z x resultats/video.y4m.7zc -o resultats/_7z
+$ python clonecompress.py bzip2 -d -k -f -v -o resultats/_bz.out resultats\video.y4m.bzc
+resultats\video.y4m.bzc -> resultats/_bz.out : 4.53 Ko -> 562.66 Ko en 0.71 s
+$ python clonecompress.py lzma -d -k -f -v -o resultats/_lz.out resultats\video.y4m.lzc
+resultats\video.y4m.lzc -> resultats/_lz.out : 4.78 Ko -> 562.66 Ko en 0.21 s
+$ python clonecompress.py 7z x resultats\video.y4m.7zc -o resultats/_7z
 Extrait   video.y4m
 Extraction terminée dans 'resultats/_7z'.
 # Vérification SHA-256 de l'aller-retour : bzip2=OK  lzma=OK  7z=OK

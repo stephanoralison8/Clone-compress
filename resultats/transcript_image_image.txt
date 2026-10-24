@@ -1,21 +1,21 @@
-$ python clonecompress.py bzip2 -k -f -v -n 3 -o resultats/image.bmp.bzc echantillons/image.bmp
-echantillons/image.bmp -> resultats/image.bmp.bzc : 225.05 Ko -> 157.73 Ko (70.08 % de l'original, gain 29.92 %) en 0.66 s
-$ python clonecompress.py lzma -k -f -v -n 6 -o resultats/image.bmp.lzc echantillons/image.bmp
-echantillons/image.bmp -> resultats/image.bmp.lzc : 225.05 Ko -> 101.42 Ko (45.06 % de l'original, gain 54.94 %) en 0.50 s
-$ python clonecompress.py 7z a resultats/image.bmp.7zc echantillons/image.bmp -n 5
-Archive resultats/image.bmp.7zc créée : 1 fichier(s), 225.05 Ko -> 101.54 Ko (45.12 % de l'original)
-Durée : 0.50 s
-$ python clonecompress.py 7z l resultats/image.bmp.7zc
+$ python clonecompress.py bzip2 -k -f -v -n 3 -o resultats\image.bmp.bzc echantillons\image.bmp
+echantillons\image.bmp -> resultats\image.bmp.bzc : 225.05 Ko -> 157.73 Ko (70.08 % de l'original, gain 29.92 %) en 3.75 s
+$ python clonecompress.py lzma -k -f -v -n 6 -o resultats\image.bmp.lzc echantillons\image.bmp
+echantillons\image.bmp -> resultats\image.bmp.lzc : 225.05 Ko -> 101.42 Ko (45.06 % de l'original, gain 54.94 %) en 4.20 s
+$ python clonecompress.py 7z a resultats\image.bmp.7zc echantillons\image.bmp -n 5
+Archive resultats\image.bmp.7zc créée : 1 fichier(s), 225.05 Ko -> 101.54 Ko (45.12 % de l'original)
+Durée : 4.23 s
+$ python clonecompress.py 7z l resultats\image.bmp.7zc
 Date                    Taille     CRC32  Nom
 ------------------------------------------------------------
-2026-10-20 04:38        230454  8af887f2  image.bmp
+2026-10-22 22:29        230454  8af887f2  image.bmp
 ------------------------------------------------------------
                         230454  1 entrée(s)
-$ python clonecompress.py bzip2 -d -k -f -v -o resultats/_bz.out resultats/image.bmp.bzc
-resultats/image.bmp.bzc -> resultats/_bz.out : 157.73 Ko -> 225.05 Ko en 0.29 s
-$ python clonecompress.py lzma -d -k -f -v -o resultats/_lz.out resultats/image.bmp.lzc
-resultats/image.bmp.lzc -> resultats/_lz.out : 101.42 Ko -> 225.05 Ko en 0.30 s
-$ python clonecompress.py 7z x resultats/image.bmp.7zc -o resultats/_7z
+$ python clonecompress.py bzip2 -d -k -f -v -o resultats/_bz.out resultats\image.bmp.bzc
+resultats\image.bmp.bzc -> resultats/_bz.out : 157.73 Ko -> 225.05 Ko en 2.85 s
+$ python clonecompress.py lzma -d -k -f -v -o resultats/_lz.out resultats\image.bmp.lzc
+resultats\image.bmp.lzc -> resultats/_lz.out : 101.42 Ko -> 225.05 Ko en 2.64 s
+$ python clonecompress.py 7z x resultats\image.bmp.7zc -o resultats/_7z
 Extrait   image.bmp
 Extraction terminée dans 'resultats/_7z'.
 # Vérification SHA-256 de l'aller-retour : bzip2=OK  lzma=OK  7z=OK

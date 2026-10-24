@@ -1,21 +1,21 @@
-$ python clonecompress.py bzip2 -k -f -v -n 3 -o resultats/texte.txt.bzc echantillons/texte.txt
-echantillons/texte.txt -> resultats/texte.txt.bzc : 303.48 Ko -> 49.65 Ko (16.36 % de l'original, gain 83.64 %) en 0.89 s
-$ python clonecompress.py lzma -k -f -v -n 6 -o resultats/texte.txt.lzc echantillons/texte.txt
-echantillons/texte.txt -> resultats/texte.txt.lzc : 303.48 Ko -> 69.87 Ko (23.02 % de l'original, gain 76.98 %) en 0.43 s
-$ python clonecompress.py 7z a resultats/texte.txt.7zc echantillons/texte.txt -n 5
-Archive resultats/texte.txt.7zc créée : 1 fichier(s), 303.48 Ko -> 72.12 Ko (23.76 % de l'original)
-Durée : 0.40 s
-$ python clonecompress.py 7z l resultats/texte.txt.7zc
+$ python clonecompress.py bzip2 -k -f -v -n 3 -o resultats\texte.txt.bzc echantillons\texte.txt
+echantillons\texte.txt -> resultats\texte.txt.bzc : 307.68 Ko -> 49.72 Ko (16.16 % de l'original, gain 83.84 %) en 5.03 s
+$ python clonecompress.py lzma -k -f -v -n 6 -o resultats\texte.txt.lzc echantillons\texte.txt
+echantillons\texte.txt -> resultats\texte.txt.lzc : 307.68 Ko -> 70.91 Ko (23.05 % de l'original, gain 76.95 %) en 8.04 s
+$ python clonecompress.py 7z a resultats\texte.txt.7zc echantillons\texte.txt -n 5
+Archive resultats\texte.txt.7zc créée : 1 fichier(s), 307.68 Ko -> 73.45 Ko (23.87 % de l'original)
+Durée : 4.57 s
+$ python clonecompress.py 7z l resultats\texte.txt.7zc
 Date                    Taille     CRC32  Nom
 ------------------------------------------------------------
-2026-10-20 04:38        310768  2bdbb6f1  texte.txt
+2026-10-22 22:29        315062  b1a22e74  texte.txt
 ------------------------------------------------------------
-                        310768  1 entrée(s)
-$ python clonecompress.py bzip2 -d -k -f -v -o resultats/_bz.out resultats/texte.txt.bzc
-resultats/texte.txt.bzc -> resultats/_bz.out : 49.65 Ko -> 303.48 Ko en 0.18 s
-$ python clonecompress.py lzma -d -k -f -v -o resultats/_lz.out resultats/texte.txt.lzc
-resultats/texte.txt.lzc -> resultats/_lz.out : 69.87 Ko -> 303.48 Ko en 0.16 s
-$ python clonecompress.py 7z x resultats/texte.txt.7zc -o resultats/_7z
+                        315062  1 entrée(s)
+$ python clonecompress.py bzip2 -d -k -f -v -o resultats/_bz.out resultats\texte.txt.bzc
+resultats\texte.txt.bzc -> resultats/_bz.out : 49.72 Ko -> 307.68 Ko en 1.77 s
+$ python clonecompress.py lzma -d -k -f -v -o resultats/_lz.out resultats\texte.txt.lzc
+resultats\texte.txt.lzc -> resultats/_lz.out : 70.91 Ko -> 307.68 Ko en 1.50 s
+$ python clonecompress.py 7z x resultats\texte.txt.7zc -o resultats/_7z
 Extrait   texte.txt
 Extraction terminée dans 'resultats/_7z'.
 # Vérification SHA-256 de l'aller-retour : bzip2=OK  lzma=OK  7z=OK

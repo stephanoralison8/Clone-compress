@@ -1,21 +1,21 @@
-$ python clonecompress.py bzip2 -k -f -v -n 3 -o resultats/audio.wav.bzc echantillons/audio.wav
-echantillons/audio.wav -> resultats/audio.wav.bzc : 258.44 Ko -> 232.03 Ko (89.78 % de l'original, gain 10.22 %) en 0.72 s
-$ python clonecompress.py lzma -k -f -v -n 6 -o resultats/audio.wav.lzc echantillons/audio.wav
-echantillons/audio.wav -> resultats/audio.wav.lzc : 258.44 Ko -> 239.82 Ko (92.79 % de l'original, gain 7.21 %) en 0.92 s
-$ python clonecompress.py 7z a resultats/audio.wav.7zc echantillons/audio.wav -n 5
-Archive resultats/audio.wav.7zc créée : 1 fichier(s), 258.44 Ko -> 239.94 Ko (92.84 % de l'original)
-Durée : 0.93 s
-$ python clonecompress.py 7z l resultats/audio.wav.7zc
+$ python clonecompress.py bzip2 -k -f -v -n 3 -o resultats\audio.wav.bzc echantillons\audio.wav
+echantillons\audio.wav -> resultats\audio.wav.bzc : 258.44 Ko -> 232.03 Ko (89.78 % de l'original, gain 10.22 %) en 3.24 s
+$ python clonecompress.py lzma -k -f -v -n 6 -o resultats\audio.wav.lzc echantillons\audio.wav
+echantillons\audio.wav -> resultats\audio.wav.lzc : 258.44 Ko -> 239.82 Ko (92.79 % de l'original, gain 7.21 %) en 11.36 s
+$ python clonecompress.py 7z a resultats\audio.wav.7zc echantillons\audio.wav -n 5
+Archive resultats\audio.wav.7zc créée : 1 fichier(s), 258.44 Ko -> 239.94 Ko (92.84 % de l'original)
+Durée : 8.85 s
+$ python clonecompress.py 7z l resultats\audio.wav.7zc
 Date                    Taille     CRC32  Nom
 ------------------------------------------------------------
-2026-10-20 04:38        264644  b35ee8a1  audio.wav
+2026-10-22 22:29        264644  b35ee8a1  audio.wav
 ------------------------------------------------------------
                         264644  1 entrée(s)
-$ python clonecompress.py bzip2 -d -k -f -v -o resultats/_bz.out resultats/audio.wav.bzc
-resultats/audio.wav.bzc -> resultats/_bz.out : 232.03 Ko -> 258.44 Ko en 0.43 s
-$ python clonecompress.py lzma -d -k -f -v -o resultats/_lz.out resultats/audio.wav.lzc
-resultats/audio.wav.lzc -> resultats/_lz.out : 239.82 Ko -> 258.44 Ko en 0.56 s
-$ python clonecompress.py 7z x resultats/audio.wav.7zc -o resultats/_7z
+$ python clonecompress.py bzip2 -d -k -f -v -o resultats/_bz.out resultats\audio.wav.bzc
+resultats\audio.wav.bzc -> resultats/_bz.out : 232.03 Ko -> 258.44 Ko en 8.04 s
+$ python clonecompress.py lzma -d -k -f -v -o resultats/_lz.out resultats\audio.wav.lzc
+resultats\audio.wav.lzc -> resultats/_lz.out : 239.82 Ko -> 258.44 Ko en 8.35 s
+$ python clonecompress.py 7z x resultats\audio.wav.7zc -o resultats/_7z
 Extrait   audio.wav
 Extraction terminée dans 'resultats/_7z'.
 # Vérification SHA-256 de l'aller-retour : bzip2=OK  lzma=OK  7z=OK
